@@ -1,0 +1,25 @@
+{
+  "name": "shubham",
+  "version": "1.0.0",
+  "description": "package for Todo-APP",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+   
+  },
+  "author": "Shubham Kandekar",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.4.1",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
