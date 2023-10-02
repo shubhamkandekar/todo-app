@@ -38,7 +38,7 @@ const Login = () => {
     <section className="gradient-form flex flex-col min-h-screen min-w-screen bg-slate-800 justify-center items-center">
     <form
       onSubmit={handelsubmit}
-      className="container flex flex-col  sm:flex-row  bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ... shadow rounded-lg rounded-br-3xl"
+      className="container flex flex-col lg:w-1/2  sm:flex-row  bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ... shadow rounded-lg rounded-br-3xl"
     >
       <div className="left  sm:w-1/2 bg-slate-950 border-b sm:border-r-2">
         <div className="flex flex-col items-center mt-6 px-6">
