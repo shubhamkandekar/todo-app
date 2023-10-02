@@ -118,7 +118,7 @@ const Todo = () => {
   return (
     <section>
       {user && (
-        <div className="h-screen w-screen">
+        <div className="h-screen w-full ">
           <nav className="bg-white border-gray-200 dark:bg-gray-900 sticky top-0">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
               <b className="flex items-center">
@@ -185,22 +185,22 @@ const Todo = () => {
               </div>
             </div>
           </nav>
-        <div className="flex justify-center h-screen w-screen bg-cover bg-center bg-[url('https://cdn.vectorstock.com/i/preview-1x/52/51/modern-3d-of-clipboard-with-checklist-concept-vector-43955251.jpg')]">
-          <main className="container flex  items-center  flex-col h-auto w-1/2  rounded-lg my-auto shadow-2xl shadow-indigo-950  ">
-            <div className=" rounded-lg bg-gradient-to-r bg-[#1b1c1a] bg-opacity-50  mt-2 p-5 shadow-black shadow-md ">
+        <div className="flex justify-center items-center  h-screen w-screen bg-cover bg-center bg-[url('https://cdn.vectorstock.com/i/preview-1x/52/51/modern-3d-of-clipboard-with-checklist-concept-vector-43955251.jpg')]">
+          <main className="container flex lg:mt-20 md:mt-20 sm:mt-20 items-center  flex-col h-auto w-[70%]  rounded-lg my-auto shadow-2xl shadow-indigo-950 mt-[40%] ">
+            <div className=" flex  rounded-lg bg-gradient-to-r bg-[#1b1c1a] bg-opacity-50  mt-2 p-5 shadow-black shadow-md  ">
               <input
                 type="text"
                 placeholder="New Todo"
                 value={newTodo}
                 onChange={(e) => setNewTodo(e.target.value)}
-                className="p-2 rounded bg-slate-950 text-orange-500 shadow-lg focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 "
+                className="p-2 h-10 rounded bg-slate-950 text-orange-500 shadow-lg focus:outline-none focus:border-orange-500 focus:ring-1  focus:ring-orange-500"
               />
               <button
                 onClick={createTodo}
                 disabled={Loading}
-                className="bg-blue-500 text-white p-2 ml-2 rounded shadow-lg"
+                className="bg-blue-500 h-10 text-white p-2 ml-2 rounded shadow-lg  "
               >
-                {Loading ? "Creating..." : "Create Todo"}
+                {Loading ? "Creating..." : "Create "}
               </button>
             </div>
             <ul>
